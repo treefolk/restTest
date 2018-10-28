@@ -1,0 +1,1 @@
+GET     /material/movie/:title                 controllers.SearchController.searchMovieMaterialBy(title: String)
