@@ -1,16 +1,12 @@
 package services
 
+import com.typesafe.config.ConfigFactory
 import entertainment.{Material, MaterialBasic, MaterialPerson, MaterialPrincipal}
 
 import scala.io.Source
 import scala.util.Try
 
 class MaterialRepository {
-
-  val PathToFile = "public/inputData/"
-  val MovieBasicsSource: String = PathToFile + "title_basics.tsv"
-  val MaterialPrincipalsSource: String = PathToFile + "title_principals.tsv"
-  val MaterialPersonsSource: String = PathToFile + "name_basics.tsv"
 
   def searchMovieMaterialByTitle(title: String): Seq[Material] = {
     val movieBasics = getMaterialBasicsFromCsv(title, "movie").toList
@@ -28,7 +24,8 @@ class MaterialRepository {
   }
 
   private def getMaterialBasicsFromCsv(title: String, titleType: String): Iterator[MaterialBasic] = {
-    getBodyFromCsv(MovieBasicsSource)
+    val movieBasicsSource = ConfigFactory.load().getString("movieBasicsSource")
+    getBodyFromCsv(movieBasicsSource)
       .filter(x => x.contains(titleType) && x.contains(title))
       .map(_.split("\t").map(_.trim).toList).collect {
       case id :: tType :: primaryTitle :: originalTitle :: isAdult :: startYear :: endYear :: runtimeMinutes :: genres :: Nil =>
@@ -39,7 +36,8 @@ class MaterialRepository {
   }
 
   private def getMaterialPrincipalsFromCsv(itemId: String): Iterator[MaterialPrincipal] = {
-    getBodyFromCsv(MaterialPrincipalsSource)
+    val materialPrincipalsSource = ConfigFactory.load().getString("materialPrincipalsSource")
+    getBodyFromCsv(materialPrincipalsSource)
       .filter(_.startsWith(itemId))
       .map(_.split("\t").map(_.trim).toList).collect {
       case id :: ordering :: nId :: category :: job :: characters :: Nil =>
@@ -49,7 +47,8 @@ class MaterialRepository {
   }
 
   private def getMaterialPersonFromCsv(nameId: String): Iterator[MaterialPerson] = {
-    getBodyFromCsv(MaterialPersonsSource)
+    val materialPersonsSource = ConfigFactory.load().getString("materialPersonsSource")
+    getBodyFromCsv(materialPersonsSource)
       .filter(_.startsWith(nameId))
       .map(_.split("\t").map(_.trim).toList).collect {
       case id :: primaryName :: birthYear :: deathYear :: primaryProfession :: knownForTitles :: Nil =>
