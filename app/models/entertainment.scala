@@ -9,7 +9,7 @@ package object entertainment {
 
   case class MaterialPerson(id: String, primaryName: String, birthYear: String, deathYear: String, primaryProfession: Seq[String], knownForTitles: Seq[String])
 
-  case class Material(materialBasic: MaterialBasic, personPrincipal: Seq[(MaterialPerson, MaterialPrincipal)])
+  case class Material(materialBasic: MaterialBasic, crew: Seq[(MaterialPerson, MaterialPrincipal)])
 
   object MaterialBasic {
     implicit val materialBasicWrites: OWrites[MaterialBasic] = Json.writes[MaterialBasic]

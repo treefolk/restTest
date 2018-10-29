@@ -1,6 +1,7 @@
 package controllers
 
 import javax.inject.{Inject, Singleton}
+import play.api.Logger
 import play.api.i18n.I18nSupport
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, ControllerComponents}
@@ -13,8 +14,10 @@ class SearchController @Inject()(cc: ControllerComponents,
   import materialRepository._
 
   def searchMovieMaterialBy(title: String) = Action {
+    Logger.info(s"Request received. Search movie material by title [$title].")
     val materials = searchMovieMaterialByTitle(title)
     val json = Json.toJson(materials)
+    Logger.info(s"Response: \n $json")
     Ok(json)
   }
 

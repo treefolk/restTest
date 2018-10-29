@@ -2,6 +2,7 @@ package services
 
 import com.typesafe.config.ConfigFactory
 import entertainment.{Material, MaterialBasic, MaterialPerson, MaterialPrincipal}
+import play.api.Logger
 
 import scala.io.Source
 import scala.util.Try
@@ -10,12 +11,16 @@ class MaterialRepository {
 
   def searchMovieMaterialByTitle(title: String): Seq[Material] = {
     val movieBasics = getMaterialBasicsFromCsv(title, "movie").toList
+    Logger.info(s"Found ${movieBasics.length} movie(s)")
     val materialPrincipals = movieBasics.map(_.id).flatMap(getMaterialPrincipalsFromCsv)
+    Logger.info(s"Found ${materialPrincipals.length} materialPrincipal(s)")
     val materialPersons = materialPrincipals.map(_.nameId).flatMap(getMaterialPersonFromCsv)
+    Logger.info(s"Found ${materialPersons.length} materialPerson(s)")
     for (mBasic <- movieBasics) yield materialComposer(mBasic, materialPrincipals, materialPersons)
   }
 
   private def materialComposer(basic: MaterialBasic, mPrincipals: Seq[MaterialPrincipal], mPerson: Seq[MaterialPerson]): Material = {
+    Logger.info("Composing material result")
     val materialPrincipals = mPrincipals.filter(p => p.id.equals(basic.id))
     val materialPrincipalNameId = materialPrincipals.map(_.nameId)
     val materialPersons = mPerson.filter(p => materialPrincipalNameId.contains(p.id))
