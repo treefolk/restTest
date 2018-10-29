@@ -1,0 +1,67 @@
+2018-10-29 08:17:45,178 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-10-29 08:17:45,561 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-10-29 08:17:45,579 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-5 - Application started (Dev)
+2018-10-29 08:17:46,065 [INFO] from application in application-akka.actor.default-dispatcher-5 - Go
+2018-10-29 08:17:46,069 [INFO] from application in application-akka.actor.default-dispatcher-5 - searchMovieMaterialByTitle : Yaar Ivargal
+2018-10-29 08:17:46,076 [INFO] from application in application-akka.actor.default-dispatcher-5 - Place
+2018-10-29 08:17:54,137 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 1 movie(s)
+2018-10-29 08:18:16,884 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 5 materialPrincipals(s)
+2018-10-29 08:18:48,623 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 5 materialPersons(s)
+2018-10-29 08:18:48,626 [INFO] from application in application-akka.actor.default-dispatcher-5 - Composing material result
+2018-10-29 08:42:04,802 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2018-10-29 08:42:04,956 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-2 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-10-29 08:42:04,961 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-2 - Application started (Dev)
+2018-10-29 08:42:04,985 [INFO] from application in application-akka.actor.default-dispatcher-5 - Request received. Search movie material by title [Yaar Ivargal].
+2018-10-29 08:42:04,987 [INFO] from application in application-akka.actor.default-dispatcher-5 - getMaterialBasicsFromCsv
+2018-10-29 08:42:13,019 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 1 movie(s)
+2018-10-29 08:42:34,923 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 5 materialPrincipal(s)
+2018-10-29 08:43:06,601 [INFO] from application in application-akka.actor.default-dispatcher-5 - Found 5 materialPerson(s)
+2018-10-29 08:43:06,608 [INFO] from application in application-akka.actor.default-dispatcher-5 - Composing material result
+2018-10-29 08:43:06,729 [INFO] from application in application-akka.actor.default-dispatcher-5 - Response:  [{"materialBasic":{"id":"tt9109814","titleType":"movie","primaryTitle":"Yaar Ivargal","originalTitle":"Yaar Ivargal","isAdult":false,"startYear":"2018","endYear":"N/A","runtimeMinutes":"\\N","genres":["Drama"]},"crew":[[{"id":"nm10182929","primaryName":"Essaki Kishore","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":1,"nameId":"nm10182929","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182930","primaryName":"Ajay Kumar","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":2,"nameId":"nm10182930","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182931","primaryName":"Subhiksha","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actress"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":3,"nameId":"nm10182931","category":"actress","job":"\\N","characters":"\\N"}],[{"id":"nm10182928","primaryName":"Balaji Shaktivel","birthYear":"N/A","deathYear":"N/A","primaryProfession":["director"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":4,"nameId":"nm10182928","category":"director","job":"\\N","characters":"\\N"}],[{"id":"nm10182932","primaryName":"Javed Riaz","birthYear":"N/A","deathYear":"N/A","primaryProfession":["composer"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":5,"nameId":"nm10182932","category":"composer","job":"\\N","characters":"\\N"}]]}]
+2018-10-29 08:48:30,523 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-10-29 08:48:30,858 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-10-29 08:48:30,872 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
+2018-10-29 08:48:31,422 [INFO] from application in application-akka.actor.default-dispatcher-3 - Request received. Search movie material by title [Yaar Ivargal].
+2018-10-29 08:48:31,425 [INFO] from application in application-akka.actor.default-dispatcher-3 - getMaterialBasicsFromCsv
+2018-10-29 08:48:38,826 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 1 movie(s)
+2018-10-29 08:49:01,328 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 5 materialPrincipal(s)
+2018-10-29 08:49:34,482 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 5 materialPerson(s)
+2018-10-29 08:49:34,485 [INFO] from application in application-akka.actor.default-dispatcher-3 - Composing material result
+2018-10-29 08:49:36,125 [INFO] from application in application-akka.actor.default-dispatcher-3 - Response:  [{"materialBasic":{"id":"tt9109814","titleType":"movie","primaryTitle":"Yaar Ivargal","originalTitle":"Yaar Ivargal","isAdult":false,"startYear":"2018","endYear":"N/A","runtimeMinutes":"\\N","genres":["Drama"]},"crew":[[{"id":"nm10182929","primaryName":"Essaki Kishore","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":1,"nameId":"nm10182929","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182930","primaryName":"Ajay Kumar","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":2,"nameId":"nm10182930","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182931","primaryName":"Subhiksha","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actress"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":3,"nameId":"nm10182931","category":"actress","job":"\\N","characters":"\\N"}],[{"id":"nm10182928","primaryName":"Balaji Shaktivel","birthYear":"N/A","deathYear":"N/A","primaryProfession":["director"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":4,"nameId":"nm10182928","category":"director","job":"\\N","characters":"\\N"}],[{"id":"nm10182932","primaryName":"Javed Riaz","birthYear":"N/A","deathYear":"N/A","primaryProfession":["composer"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":5,"nameId":"nm10182932","category":"composer","job":"\\N","characters":"\\N"}]]}]
+2018-10-29 08:50:41,211 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-10-29 08:50:41,321 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-2 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-10-29 08:50:41,325 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-2 - Application started (Dev)
+2018-10-29 08:50:41,363 [INFO] from application in application-akka.actor.default-dispatcher-2 - Request received. Search movie material by title [Yaar Ivargal].
+2018-10-29 08:50:48,112 [INFO] from application in application-akka.actor.default-dispatcher-2 - Found 1 movie(s)
+2018-10-29 08:51:10,031 [INFO] from application in application-akka.actor.default-dispatcher-2 - Found 5 materialPrincipal(s)
+2018-10-29 08:51:39,242 [INFO] from application in application-akka.actor.default-dispatcher-3 - Request received. Search movie material by title [Yaar Ivargal].
+2018-10-29 08:51:40,724 [INFO] from application in application-akka.actor.default-dispatcher-2 - Found 5 materialPerson(s)
+2018-10-29 08:51:40,727 [INFO] from application in application-akka.actor.default-dispatcher-2 - Composing material result
+2018-10-29 08:51:40,947 [INFO] from application in application-akka.actor.default-dispatcher-2 - Response: 
+ [{"materialBasic":{"id":"tt9109814","titleType":"movie","primaryTitle":"Yaar Ivargal","originalTitle":"Yaar Ivargal","isAdult":false,"startYear":"2018","endYear":"N/A","runtimeMinutes":"\\N","genres":["Drama"]},"crew":[[{"id":"nm10182929","primaryName":"Essaki Kishore","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":1,"nameId":"nm10182929","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182930","primaryName":"Ajay Kumar","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":2,"nameId":"nm10182930","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182931","primaryName":"Subhiksha","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actress"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":3,"nameId":"nm10182931","category":"actress","job":"\\N","characters":"\\N"}],[{"id":"nm10182928","primaryName":"Balaji Shaktivel","birthYear":"N/A","deathYear":"N/A","primaryProfession":["director"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":4,"nameId":"nm10182928","category":"director","job":"\\N","characters":"\\N"}],[{"id":"nm10182932","primaryName":"Javed Riaz","birthYear":"N/A","deathYear":"N/A","primaryProfession":["composer"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":5,"nameId":"nm10182932","category":"composer","job":"\\N","characters":"\\N"}]]}]
+2018-10-29 08:51:46,241 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 1 movie(s)
+2018-10-29 08:52:06,128 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 5 materialPrincipal(s)
+2018-10-29 08:52:39,982 [INFO] from application in application-akka.actor.default-dispatcher-3 - Found 5 materialPerson(s)
+2018-10-29 08:52:39,983 [INFO] from application in application-akka.actor.default-dispatcher-3 - Composing material result
+2018-10-29 08:52:39,989 [INFO] from application in application-akka.actor.default-dispatcher-3 - Response: 
+ [{"materialBasic":{"id":"tt9109814","titleType":"movie","primaryTitle":"Yaar Ivargal","originalTitle":"Yaar Ivargal","isAdult":false,"startYear":"2018","endYear":"N/A","runtimeMinutes":"\\N","genres":["Drama"]},"crew":[[{"id":"nm10182929","primaryName":"Essaki Kishore","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":1,"nameId":"nm10182929","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182930","primaryName":"Ajay Kumar","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actor"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":2,"nameId":"nm10182930","category":"actor","job":"\\N","characters":"\\N"}],[{"id":"nm10182931","primaryName":"Subhiksha","birthYear":"N/A","deathYear":"N/A","primaryProfession":["actress"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":3,"nameId":"nm10182931","category":"actress","job":"\\N","characters":"\\N"}],[{"id":"nm10182928","primaryName":"Balaji Shaktivel","birthYear":"N/A","deathYear":"N/A","primaryProfession":["director"],"knownForTitles":["\\N"]},{"id":"tt9109814","ordering":4,"nameId":"nm10182928","category":"director","job":"\\N","characters":"\\N"}],[{"id":"nm10182932","primaryName":"Javed Riaz","birthYear":"N/A","deathYear":"N/A","primaryProfession":["composer"],"knownForTitles":["tt9109814"]},{"id":"tt9109814","ordering":5,"nameId":"nm10182932","category":"composer","job":"\\N","characters":"\\N"}]]}]
