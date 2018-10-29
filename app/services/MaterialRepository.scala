@@ -30,6 +30,7 @@ class MaterialRepository {
 
   private def getMaterialBasicsFromCsv(title: String, titleType: String): Iterator[MaterialBasic] = {
     val movieBasicsSource = ConfigFactory.load().getString("movieBasicsSource")
+    Logger.info(s"movieBasicsSource: $movieBasicsSource")
     getBodyFromCsv(movieBasicsSource)
       .filter(x => x.contains(titleType) && x.contains(title))
       .map(_.split("\t").map(_.trim).toList).collect {
@@ -42,6 +43,7 @@ class MaterialRepository {
 
   private def getMaterialPrincipalsFromCsv(itemId: String): Iterator[MaterialPrincipal] = {
     val materialPrincipalsSource = ConfigFactory.load().getString("materialPrincipalsSource")
+    Logger.info(s"materialPrincipalsSource: $materialPrincipalsSource")
     getBodyFromCsv(materialPrincipalsSource)
       .filter(_.startsWith(itemId))
       .map(_.split("\t").map(_.trim).toList).collect {
@@ -53,6 +55,7 @@ class MaterialRepository {
 
   private def getMaterialPersonFromCsv(nameId: String): Iterator[MaterialPerson] = {
     val materialPersonsSource = ConfigFactory.load().getString("materialPersonsSource")
+    Logger.info(s"materialPersonsSource: $materialPersonsSource")
     getBodyFromCsv(materialPersonsSource)
       .filter(_.startsWith(nameId))
       .map(_.split("\t").map(_.trim).toList).collect {
